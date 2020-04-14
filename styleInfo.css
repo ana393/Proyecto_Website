@@ -1,0 +1,124 @@
+*{
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+}
+body{
+      background-image: url(/wood.jpg);
+      background-size: cover;
+}
+  
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:transparent;
+  height: 100px;
+  width: 100%;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 80px;
+
+}
+nav ul div{
+       display:flex;
+       margin: 0px 30px; 
+}
+nav div a {
+    color:whitesmoke;
+    font-size: 20px;
+    padding: 7px 13px; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+nav div a:hover{
+      background: grey;
+}
+/*Hoja Principal*/
+.Base-Sheet{  
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 102px - 100px);
+    }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  
+}
+.cover{
+    grid-column: 1;
+    grid-row: 1/2;
+  background-color:#f1f1f1;
+  height: 250px ;
+  padding: 20px;
+  text-align: center;
+
+}
+.cover h4{
+           font-size: 35px;
+           color:#694a5b;
+           margin-bottom: 30px;
+           font-weight: bold;
+           font-style: oblique;
+}
+.cover p {
+  font-size: 30px;
+  color:#694a5b;
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: oblique;
+}
+.cover_profile{
+        display: grid;
+       grid-auto-rows: minmax(250px, auto);
+       grid-gap: 15px;
+      }
+     
+  .Exp-Container{
+        grid-column: 2;
+        background-color: transparent;
+        text-align: center;
+         padding: 10px;
+  }
+  .Exp-Container p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .Edu-Container{
+    grid-column: 1;
+    grid-row-start:1;
+    grid-column-end: 2;
+    background-color: transparent;
+    text-align: center;
+    padding: 15px;
+    
+
+}
+.Edu-Container p{
+            font-size: 20px;
+            font-weight: bold;
+
+
+}
+.Exp-Container p{
+        font-size: 20px;
+        font-weight: bold;
+
+}
+footer{
+  text-align: center;
+  background-color:#333;
+  color: #fff;
+  padding: 40px;
+  }
+
