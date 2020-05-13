@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link href="style.css" type="text/css"  rel="stylesheet">
+    <link href="/css/style.css" type="text/css"  rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/cssfamily=Open+Sans&display=swap">-->
+    <script src="/js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Web de Perfil</title>
 </head>
 <body>
-      <!--Navigación-->
-      <nav>        
-          <label class="logo">Ana Tcaci</label>
-            <ul>
-                <div><a  class="active" href="/Home.html "> <i class="fas fa-home"></i>Home</a></div>
-                <div><a href="#"> <i class="fas fa-envelope"></i>Contact</a></div>  
-            </ul>
-        </nav>
-   
+    
      <!--El contenedor/hoja principal-->
-     <div class="base-container">
-       <div class="upper-container">
-           <div class="image-container">
-             <img src="/foto.jpg"/>
+     <main class="base-container">
+       <aside class="left-container">
+         <!--Navigacion hacia la pagina de contacto-->
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="#"> <i class="fas fa-home"></i>  Home</a></li>
+            <li><a  href="/Contacto.html"><i class="fas fa-envelope"></i>  Contact</a></li> 
+          </ul>     
+        </nav>
+        <!--Contenedor de la foto de perfil-->
+           <div class="image">
+              <img src="/img/foto.jpg" ><br><br> 
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum voluptates.</p>
            </div>
-      </div> 
-      <div class="lower-container">
-           <p>"Soy operadora en Global Blue y aprendo FrontEnd en GeeksHubs Academy"</p> 
-           <a href="/MasInfo.html" class="btn">Mas Info</a>
-
-      </div>
+       </aside> 
+      <div class="right-container">
+         <!--Info contenedor-->
+         <div class="info-container">
+          <h1 class="name">Ana Tcaci</h1><br>
+          <p class="description">Trabajo en GB y aprendo Frontend en GeeksHubs Academy.
+             Este es mi primer proyecto, con una estructura basica y sencilla en HTML5+CSS.
+             Contiene 2 pagina (Home y Contactos).
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            A animi ullam quidem delectus. Dolores ducimus, quas vero quisquam iste aperiam
+             inventore quo omnis amet laudantium, doloremque deserunt qui enim! Quasi</p>
+         </div>
+         <div class="Experience">
+         <!--Skills´ Container--> 
+         <div class="skills"><h1>Skills</h1>
+           <span>Administrativo</span>
+           <span>Idiomas</span>
+           <span>Flexibilidad</span>
          
-  </div>
+        </div>
+         <!--Education Container-->
+         <div class="education"><h1>Education</h1><br>
+          <span>Licenciada en el campo TIC</span>
+          <span>ESOL C1, Cambridge University</span>
+         </div>
+        </div>
+     </div>      
+    </main>
    
-</body>
+</body> 
 
 </html>
